@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212; 
+    color: #e0e0e0;          
+    min-height: 100vh;        
+    display: flex;
+    justify-content: center;   
+    align-items: center;     
+}
+
+
+.auth-box {
+    background: #1e1e1e; 
+    width: 100%;
+    max-width: 400px;          
+    padding: 40px;
+    border-radius: 16px;    
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.logo {
+    color: #9c4dcc;
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.auth-subtitle {
+    color: #a0a0a0;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #2c2c2c;  
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #ffffff;
+    outline: none;            
+    transition: 0.3s;    
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    background: #333333;
+    border-color: #9c4dcc;     
+    box-shadow: 0 0 8px rgba(156, 77, 204, 0.3);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #b39ddb;
+    font-size: 14px;
+}
+
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #9c4dcc;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #ff5252;
+    font-size: 12px;
+    display: block;
+    height: 16px; 
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+.auth-footer a {
+    color: #9c4dcc;
+    text-decoration: none;
+}
