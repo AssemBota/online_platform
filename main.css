@@ -164,6 +164,46 @@
     display:block;
   }
 }
+.hero {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.hero-inner {
+    max-width: 1300px;  
+    height: 420px;       
+    margin: 0 auto;      
+    background-image: url("https://img-c.udemycdn.com/notices/web_carousel_slide/image/5ab81bd5-af55-4235-9f1e-07cdc7ce0b93.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0;   
+    display: flex;
+    align-items: center;
+    padding-left: 40px; 
+}
+
+.hero-content {
+    background: white;
+    padding: 24px 32px;
+    border-radius: 12px;
+    max-width: 420px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.hero-content h1 {
+    margin: 0 0 12px;
+    font-size: 30px;
+    color: #1f1f1f;
+}
+
+.hero-content p {
+    margin: 0;
+    color: #555;
+    font-size: 17px;
+}
+
 
 /* ===== FOOTER ===== */
 .footer {
