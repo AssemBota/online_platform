@@ -617,4 +617,68 @@
   font-size: 0.9rem;
   color: #b9a9ff;
 }
+#instructors {
+  padding: 60px 0;
+  background: white;
+}
 
+.instructors-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: black;
+}
+
+.instructor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.instructor-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.25s;
+}
+
+.instructor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.instructor-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.instructor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.instructor-card .role {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+.instructor-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.instructor-link .instructor-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.instructor-link .instructor-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
