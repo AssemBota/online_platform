@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page </title>
      <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+     
 </head>
 <body>
     <header class="site-header">
@@ -28,18 +31,21 @@
     <nav class="nav-links">
       <ul>
        <li><a href="#courses">Courses</a></li>
-        <li><a href="#Benefits">Benefits</a></li>
-        <li><a href="#graduates">Reviews</a></li>
-        <li><a href="#about">About Us</a></li>
+      <li><a href="#Benefits">Benefits</a></li>
+      <li><a href="#graduates">Reviews</a></li>
+      
       </ul>
     </nav>
 
-
-    <div class="nav-actions">
+     <div class="nav-actions">
       <a class="btn login-btn" href="auth_app.html">Log In</a>
       <a class="btn signup-btn" href="auth_app.html">Sign Up</a>
       <button class="burger" aria-expanded="false" onclick="toggleMobileMenu(this)">☰</button>
     </div>
+
+
+
+   
 
   </div>
 
@@ -50,13 +56,7 @@
       <button type="submit">🔍</button>
     </form>
 
-    <ul>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#Benefits">Benefits</a></li>
-      <li><a href="#graduates">Reviews</a></li>
-      <li><a href="auth_app.html">Log In</a></li>
-      <li><a class="signup-btn" href="auth_app.html">Sign Up</a></li>
-    </ul>
+    
   </div>
 </header>
 
@@ -66,6 +66,9 @@
     <div class="hero-content">
       <h1>Learn More, Spend Less</h1>
       <p>Black Friday deals on thousands of courses.</p>
+      <br>
+      <button id="startBtn" class="start-btn">Start learning</button>
+
     </div>
   </div>
 </section>
@@ -106,11 +109,6 @@
     </div>
   </div>
 </section>
-
-
-
-
-
 <section id="Benefits">
 <div style="background-color: #f8f8ff; padding: 40px; font-family: sans-serif;">
 
@@ -139,8 +137,7 @@
                 Best results
             </p>
         </div>
-
-        <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+ <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
             <div style="color: #6a5acd; font-size: 2em; margin-bottom: 10px;">
                 🎓
             </div>
@@ -178,8 +175,7 @@
                 Stay ahead with cutting technologies
             </p>
         </div>
-
-        <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
+ <div style="width: 300px; background-color: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); padding: 20px; text-align: center;">
             <div style="color: #6a5acd; font-size: 2em; margin-bottom: 10px;">
                 🛡️
             </div>
@@ -205,47 +201,50 @@
     </div>
 </div>
 </section>
+<section id="instructors">
+    <div class="container instructors-container">
+        <h2 class="instructors-title">Our Instructors</h2>
+        <div class="instructor-grid">
 
+            <a href="https://www.linkedin.com/in/artyom-novikov-252265332" target="_blank" class="instructor-link">
+                <div class="instructor-card">
+                    <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/5271888733563194931.jpg" alt="Instructor">
+                    <h3>Artyom Novikov</h3>
+                    <p class="role">Senior Java Developer</p>
+                    <p>Expert in Java, Spring Boot, and backend architecture.</p>
+                </div>
+            </a>
 
+            <a href="https://www.linkedin.com/in/zhanibek-abdikaziyev/" target="_blank" class="instructor-link">
+                <div class="instructor-card">
+                    <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/5274085940047580688.jpg" alt="Instructor">
+                    <h3>Zhanibek Abdikaziyev</h3>
+                    <p class="role">Python & ML Expert</p>
+                    <p>Machine Learning specialist who worked with Google AI Research.</p>
+                </div>
+            </a>
 
+            <a href="https://www.linkedin.com/in/assem-botabayeva-46092b358/" target="_blank" class="instructor-link">
+                <div class="instructor-card">
+                    <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/5271888733563194936.jpg" alt="Instructor">
+                    <h3>Assem Botabayeva</h3>
+                    <p class="role">Full-Stack Developer</p>
+                    <p>Expert in JavaScript, React, Node.js and modern frontend systems.</p>
+                </div>
+            </a>
 
-<section id="graduates">
-    <div class="container graduates-container">
-        <h2 class="graduates-title">Our Graduates</h2>
-        <div class="graduate-grid">
-
-            <div class="graduate-card">
-                <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/5271888733563194931.jpg" alt="Graduate">
-                <h3>Artyom Novikov</h3>
-                <p class="role">Java Fundamentls Course</p>
-                <p>“This course helped me finally understand Java and Spring Boot. Thanks to the projects we built, I got my first job offer as a Junior Java Developer right after graduation.”</p>
-            </div>
-
-            <div class="graduate-card">
-                <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/5274085940047580688.jpg" alt="Graduate">
-                <h3>Zhanibek Abdikaziyev</h3>
-                <p class="role">Python Course</p>
-                <p>“The program completely changed how I think about coding. After finishing it, I won a hackathon and joined an international AI project. This course became a turning point in my career.”</p>
-            </div>
-
-            <div class="graduate-card">
-                <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/5271888733563194936.jpg" alt="Graduate">
-                <h3>Assem Botabayeva</h3>
-                <p class="role">Python and Go Courses</p>
-                <p>“I started with zero experience, but step by step I learned python and basics of Go language. Just 3 months after graduating, I landed my first job in IT. This course gave me confidence and real skills.”</p>
-            </div>
-
-            <div class="graduate-card">
-                <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/3942224252365809589.jpg" alt="Graduate">
-                <h3>Bekarys Yertay</h3>
-                <p class="role">React Frontend Course</p>
-                <p>“The mentors were always supportive and explained everything clearly. I built my portfolio entirely from course projects and soon got hired as a Frontend Developer. Best learning experience ever.”</p>
-            </div>
+            <a href="https://www.linkedin.com/in/bekarys-yertay-910a11327/" target="_blank" class="instructor-link">
+                <div class="instructor-card">
+                    <img src="https://raw.githubusercontent.com/AssemBota/online_platform/main/3942224252365809589.jpg" alt="Instructor">
+                    <h3>Bekarys Yertay</h3>
+                    <p class="role">Front End Developer</p>
+                    <p>5+ years teaching Front End, experienced developer.</p>
+                </div>
+            </a>
 
         </div>
     </div>
 </section>
-
 
 
 </div>
@@ -257,6 +256,8 @@
       <p>Your trusted platform for modern online learning.  
          Start your journey today.</p>
     </div>
+
+    
 
     <div class="footer-col">
       <h5>Courses</h5>
@@ -286,10 +287,20 @@
         <li><a href="#">Help Center</a></li>
         <li><a href="#">FAQ</a></li>
         <li><a href="#">Contact us</a></li>
-        <li><a href="#">+7(707)734-9189</a></li>
-        <li><a href="#">230103002@sdu.edu.kz</a></li>
       </ul>
     </div>
+
+    <div class="footer-contacts">
+        <h5>Email: <a href="mailto:hello@codelab.com">hello@codelab.com</a></h5>
+        <h5>Phone: +7 705 123 45 67</h5>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
 
   </div>
 
@@ -298,6 +309,44 @@
   </div>
 </footer>
 
+<div id="applyModal" class="apply-modal">
+  <div class="apply-backdrop"></div>
+
+  <div class="apply-card">
+    <button class="apply-close" id="applyClose">&times;</button>
+    <h3>Submit an Application</h3>
+
+    <form id="applyForm">
+
+      <label>
+        Full Name
+        <input type="text" id="fullname" required placeholder="John Smith">
+      </label>
+
+      <label>
+        Phone Number
+        <input type="tel" id="phone" required placeholder="+1 234 567 890">
+      </label>
+
+      <label>
+        Course
+        <select id="courseSelect" required>
+          <option value="">— Select a course —</option>
+          <option>Java Fundamentals</option>
+          <option>Python for Beginners</option>
+          <option>Go Language Basics</option>
+          <option>React Frontend Bootcamp</option>
+        </select>
+      </label>
+       <br>
+       <br>
+      <button type="submit" class="start-btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="main.js"></script>
 
 </body>
 </html>
+
