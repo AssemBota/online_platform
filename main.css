@@ -579,12 +579,12 @@
     min-height: auto; 
   }
 }
-#instructors {
+#graduates {
   padding: 60px 0;
   background: white;
 }
 
-.instructors-title {
+.graduates-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -592,13 +592,13 @@
   color: black;
 }
 
-.instructor-grid {
+.graduate-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-.instructor-card {
+.graduate-card {
   background: white;
   padding: 20px;
   border-radius: 12px;
@@ -607,12 +607,12 @@
   transition: 0.25s;
 }
 
-.instructor-card:hover {
+.graduate-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.instructor-card img {
+.graduate-card img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -620,29 +620,15 @@
   margin-bottom: 15px;
 }
 
-.instructor-card h3 {
+.graduate-card h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
 
-.instructor-card .role {
+.graduate-card .role {
   font-size: 0.95rem;
-  color: #666;
+  color: grey;
   margin-bottom: 12px;
-}
-.instructor-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.instructor-link .instructor-card {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.instructor-link .instructor-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    cursor: pointer;
 }
 .java-info-section {
   max-width: 1200px;
