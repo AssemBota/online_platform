@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Fundamentals – LearnCenter</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+ <header class="site-header">
+  <div class="container nav-inner">
+
+
+    <a class="logo" href="#">CodeLab</a>
+
+
+    <form class="nav-search" role="search">
+      <button type="submit" class="search-btn" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </button>
+      <input type="text" placeholder="Search courses..." aria-label="Search">
+    </form>
+
+
+    <nav class="nav-links">
+      <ul>
+       <li><a href="#courses">Courses</a></li>
+        <li><a href="#tracks">Learning Paths</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="nav-actions">
+      <a class="btn login-btn" href="auth_app.html">Log In</a>
+      <a class="btn signup-btn" href="auth_app.html">Sign Up</a>
+      <button class="burger" aria-expanded="false" onclick="toggleMobileMenu(this)">☰</button>
+    </div>
+
+  </div>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+    <form class="mobile-search">
+      <input type="text" placeholder="Search courses…" />
+      <button type="submit">🔍</button>
+    </form>
+
+    <ul>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#tracks">Learning Paths</a></li>
+      <li><a href="#instructors">Instructors</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li><a class="signup-btn" href="register.html">Sign Up</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="course-hero">
+  <img src="https://kursy.ru/images/posts/previews/cto-takoe-java.webp" alt="Java Banner">
+  <div class="course-hero-text">
+    <h1>Start Learning Java Fundamentals</h1>
+    <p>Your journey into backend development begins here.</p>
+  </div>
+</section>
+<section class="java-info-section">
+
+  <div class="java-block">
+    <div class="java-text">
+      <h1>What Is Java?</h1>
+      <p>
+       Java is a high-level, object-oriented programming language designed to be simple,
+    secure, and universal. It allows developers to build software that runs on almost
+    any device without rewriting the code — a concept known as
+    <strong>“Write once, run anywhere.”</strong>
+      </p>
+      <h1>Who Created Java?</h1>
+  <p>
+    Java was created by <strong>James Gosling</strong> at <strong>Sun Microsystems</strong>
+    in <strong>1995</strong>. It was originally intended for smart home devices but quickly
+    became one of the world’s most widely used programming languages.
+  </p>
+
+  
+    </div>
+
+    <div class="java-img1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv21hV8IAJ_zjn-_S1HgJCdD-SX_wmzLDDCMrxaQBiHkCr5lBfaQn-HnJ3H5Ojh7KmdLA&usqp=CAU" height="300px" alt="Java Code Image">
+    </div>
+  </div>
+
+
+
+  <div class="java-block reverse">
+    <div class="java-text">
+      <h2>What You Will Learn</h2>
+      <p>
+       You will gain a strong foundation in Java — one of the world’s most widely used and respected programming languages.
+Throughout the course, you will learn:
+
+Java syntax & core programming concepts — variables, data types, operators, conditions, and loops.
+
+Object-Oriented Programming (OOP) — classes, objects, encapsulation, inheritance, and polymorphism — essential skills for every real-world developer.
+
+Working with arrays, methods, and modular code — learn how to structure programs like professional developers do.
+
+Understanding how Java applications run — from source code to bytecode, JVM basics, and how Java achieves platform independence.
+
+Debugging & problem-solving skills — learn to analyze errors, fix issues, and write clean, logical code.
+      </p>
+      <p>
+        After the course, you'll be able to read and write real Java code,
+        understand how applications work, and build your first projects —
+        from simple scripts to full backend functionality.
+      </p>
+    </div>
+
+    <div class="java-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jCTDwtl6bkYJ7Q3FsB1JcIYfcIokfAbAqQ&s" alt="Java Learning">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+</section>
+<section class="why-language">
+  <h2 class="why-title">Why Choose Java?</h2>
+
+  <div class="why-grid">
+
+
+    <div class="why-card">
+      <div class="why-text">
+        <h3>Perfect Language for Beginners</h3>
+        <p>Java is strongly typed, structured, and easy to understand for new developers.</p>
+        <span class="quote-author">Marat Safargaleev — Course Graduate</span>
+      </div>
+      <img src="https://img.icons8.com/3d-fluency/512/puzzle.png" alt="Java advantages">
+    </div>
+
+
+    <div class="why-card">
+      <div class="why-text">
+        <h3>Top-5 Language by TIOBE Index</h3>
+        <p>Java has been among the most popular programming languages for decades.</p>
+        <span class="quote-author">Viktor Buzunov — Java Developer</span>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhe0IQjfW8BEeh8gWYBSEhfZlvHJLkWXaffg&s" alt="Rating">
+    </div>
+
+
+    <div class="why-card">
+      <div class="why-text">
+        <h3>Runs Everywhere</h3>
+        <p>Write once — run anywhere: Windows, Linux, macOS and Android.</p>
+        <span class="quote-author">Arkadiy Raylyanu — Java Engineer</span>
+      </div>
+      <img src="https://optimalgroup.ru/upload/iblock/ebd/h1l7tvmz5u7scae0aldhdq53yddpfi8a.jpg"   height="500px"       alt="Devices">
+    </div>
+
+  </div>
+</section>
+
+
+</section>
+
+<h2 class="salary-title">Java Developer Salaries</h2>
+
+<div class="salary-cards">
+
+  <div class="salary-card salary-card1">
+    <h3>₸500,000</h3>
+    <span class="level-badge">Junior</span>
+    <p>After completing the course</p>
+  </div>
+
+  <div class="salary-card salary-card2">
+    <h3>₸850,000</h3>
+    <span class="level-badge">Middle</span>
+    <p>1–5 years</p>
+  </div>
+
+  <div class="salary-card salary-card3">
+    <h3>₸1,300,000</h3>
+    <img src="https://cdn-icons-png.flaticon.com/512/1161/1161782.png" class="salary-img" alt="senior icon">
+    <span class="level-badge">Senior</span>
+    <p>5+ years</p>
+  </div>
+
+</div>
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <h4>CodeLab</h4>
+      <p>Your trusted platform for modern online learning.  
+         Start your journey today.</p>
+    </div>
+
+    
+
+    <div class="footer-col">
+      <h5>Courses</h5>
+      <ul>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">Go</a></li>
+        <li><a href="#">AI & ML</a></li>
+        <li><a href="#">Design</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Learning Paths</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacts">
+        <h5>Email: <a href="mailto:hello@codelab.com">hello@codelab.com</a></h5>
+        <h5>Phone: +7 705 123 45 67</h5>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 CodeLab. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
