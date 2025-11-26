@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Fundamentals – LearnCenter</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+ <header class="site-header">
+  <div class="container nav-inner">
+
+
+    <a class="logo" href="#">CodeLab</a>
+
+
+    <form class="nav-search" role="search">
+      <button type="submit" class="search-btn" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </button>
+      <input type="text" placeholder="Search courses..." aria-label="Search">
+    </form>
+
+
+    <nav class="nav-links">
+      <ul>
+       <li><a href="#courses">Courses</a></li>
+        <li><a href="#tracks">Learning Paths</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="nav-actions">
+      <a class="btn login-btn" href="login.html">Log In</a>
+      <a class="btn signup-btn" href="register.html">Sign Up</a>
+      <button class="burger" aria-expanded="false" onclick="toggleMobileMenu(this)">☰</button>
+    </div>
+
+  </div>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+    <form class="mobile-search">
+      <input type="text" placeholder="Search courses…" />
+      <button type="submit">🔍</button>
+    </form>
+
+    <ul>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#tracks">Learning Paths</a></li>
+      <li><a href="#instructors">Instructors</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li><a class="signup-btn" href="register.html">Sign Up</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="course-hero">
+  <img src="https://skillbox.kz/landing-assets/6a/be/443549c83325c758faa28d303538.webp" alt="Java Banner">
+  <div class="course-hero-text">
+   <h1>Start Learning Python Fundamentals</h1>
+    <p>Your journey into Python programming starts here.</p>
+  </div>
+</section>
+<section class="java-info-section">
+
+  <div class="java-block">
+    <div class="java-text">
+     <h1>What Is Python?</h1>
+      <p>
+        Python is a high-level, beginner-friendly programming language known for its clean syntax,
+        powerful capabilities, and massive ecosystem. It's widely used in web development, data analysis,
+        automation, artificial intelligence, and more.
+      </p>
+
+      <h1>Who Created Python?</h1>
+      <p>
+        Python was created by <strong>Guido van Rossum</strong> and first released in <strong>1991</strong>.
+        It was designed to be simple, readable, and fun — and today, it has become one of the most popular
+        programming languages in the world.
+      </p>
+
+  
+    </div>
+
+    <div class="java-img1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lNRkulT-Z7a-7iPMa7QTsQdzJ7YmgG07pw&s" width="500px" height="300px" alt="Java Code Image">
+    </div>
+  </div>
+
+
+
+  <div class="java-block reverse">
+    <div class="java-text">
+     <h2>What You Will Learn</h2>
+      <p>
+        This course will give you a solid foundation in Python — a versatile and powerful language used
+        in nearly every tech field. Throughout the course, you will learn:
+        <br><br>
+
+        <strong>Python syntax & core concepts</strong> — variables, data types, operators, conditions, loops.<br>
+
+        <strong>Functions and modular programming</strong> — writing reusable components like real developers do.<br>
+
+        <strong>Working with files & data</strong> — reading, writing, parsing, and processing information.<br>
+
+        <strong>Intro to backend and automation</strong> — understand how Python powers servers,
+        APIs, and everyday scripting tasks.<br><br>
+
+        <strong>Error handling & debugging</strong> — learn how to analyze issues and write clean, stable code.
+      </p>
+
+      <p>
+        By the end of this course, you'll be able to create real Python programs,
+        work confidently with code, and build your first projects — from mini-apps
+        to full beginner-level backend features.
+      </p>
+    </div>
+
+    <div class="java-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNFpVCORtcxgE8j6HMFQyyahvdQ-F1Tp0F93z5VHENiA4GdOceidkbDkWkP4St3Fi8qGg&usqp=CAU" alt="Java Learning">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<section id="about-python" class="about-java container">
+  <h2 class="section-title">About Python</h2>
+
+  <div class="about-grid">
+
+
+    <article class="about-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python logo" class="about-icon">
+      <h3>Short History</h3>
+      <p>Python was created by Guido van Rossum in 1991.  
+         It became one of the world’s most popular languages thanks to its simplicity and powerful ecosystem.</p>
+    </article>
+
+
+    <article class="about-card">
+      <img src="https://img.icons8.com/3d-fluency/96/rocket.png" alt="Why choose Python" class="about-icon">
+      <h3>Why Choose Python</h3>
+      <ul class="why-list">
+        <li>Beginner-friendly and clean syntax</li>
+        <li>Huge demand in data science & backend</li>
+        <li>Massive libraries for AI, ML, automation, and web</li>
+      </ul>
+    </article>
+
+
+    <article class="about-card">
+      <img src="https://img.icons8.com/3d-fluency/96/mind-map.png" alt="Learn Python" class="about-icon">
+      <h3>What You'll Learn</h3>
+      <ul class="learn-list">
+        <li>Python basics & core concepts</li>
+        <li>Variables, loops, functions</li>
+        <li>Working with files & data</li>
+        <li>Your first backend or automation project</li>
+      </ul>
+     
+    </article>
+
+  </div>
+</section>
+
+
+</section>
+
+<h2 class="salary-title">Python Developer Salaries</h2>
+
+<div class="salary-cards">
+
+  <div class="salary-card salary-card1">
+    <h3>₸250,000</h3>
+    <span class="level-badge">Junior</span>
+    <p>After completing the course</p>
+  </div>
+
+  <div class="salary-card salary-card2">
+    <h3>₸500,000</h3>
+    <span class="level-badge">Middle</span>
+    <p>1–5 years</p>
+  </div>
+
+  <div class="salary-card salary-card3">
+    <h3>₸1,300,000</h3>
+    <img src="https://cdn-icons-png.flaticon.com/512/1161/1161782.png" class="salary-img" alt="senior icon">
+    <span class="level-badge">Senior</span>
+    <p>5+ years</p>
+  </div>
+
+</div>
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <h4>CodeLab</h4>
+      <p>Your trusted platform for modern online learning.  
+         Start your journey today.</p>
+    </div>
+
+    
+
+    <div class="footer-col">
+      <h5>Courses</h5>
+      <ul>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">Go</a></li>
+        <li><a href="#">AI & ML</a></li>
+        <li><a href="#">Design</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Learning Paths</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacts">
+        <h5>Email: <a href="mailto:hello@codelab.com">hello@codelab.com</a></h5>
+        <h5>Phone: +7 705 123 45 67</h5>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 CodeLab. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
