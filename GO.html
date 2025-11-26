@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Fundamentals – LearnCenter</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+ <header class="site-header">
+  <div class="container nav-inner">
+
+
+    <a class="logo" href="#">CodeLab</a>
+
+
+    <form class="nav-search" role="search">
+      <button type="submit" class="search-btn" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </button>
+      <input type="text" placeholder="Search courses..." aria-label="Search">
+    </form>
+
+
+    <nav class="nav-links">
+      <ul>
+       <li><a href="#courses">Courses</a></li>
+        <li><a href="#tracks">Learning Paths</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="nav-actions">
+      <a class="btn login-btn" href="login.html">Log In</a>
+      <a class="btn signup-btn" href="register.html">Sign Up</a>
+      <button class="burger" aria-expanded="false" onclick="toggleMobileMenu(this)">☰</button>
+    </div>
+
+  </div>
+
+
+  <div class="mobile-menu" id="mobileMenu">
+    <form class="mobile-search">
+      <input type="text" placeholder="Search courses…" />
+      <button type="submit">🔍</button>
+    </form>
+
+    <ul>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#tracks">Learning Paths</a></li>
+      <li><a href="#instructors">Instructors</a></li>
+      <li><a href="login.html">Log In</a></li>
+      <li><a class="signup-btn" href="register.html">Sign Up</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="course-hero">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROhSN7kOWyMVMkPaZSjIr17gl_fHhi15E9Tw&s" alt="Java Banner">
+  <div class="course-hero-text">
+   <h1>Start Learning Go Fundamentals</h1>
+<p>Your journey into Go programming begins here.</p>
+
+  </div>
+</section>
+<section class="java-info-section">
+
+  <div class="java-block">
+    <div class="java-text">
+     <h1>What Is Go?</h1>
+<p>
+  Go (also called Golang) is a modern, high-performance programming language created for building
+  fast, scalable, and reliable software. Its simplicity, built-in concurrency model, and strong
+  standard library make it a top choice for backend development, cloud services, distributed systems,
+  and microservices.
+</p>
+
+<h1>Who Created Go?</h1>
+<p>
+  Go was created at <strong>Google</strong> by <strong>Robert Griesemer</strong>, 
+  <strong>Rob Pike</strong>, and <strong>Ken Thompson</strong>.  
+  It was released in <strong>2009</strong> with the goal of combining the performance of C-like
+  languages with the ease and readability of modern programming.  
+  Today, Go is widely used by companies like Google, Uber, Netflix, Dropbox, and many others.
+</p>
+
+
+  
+    </div>
+
+    <div class="java-img1">
+      <img src="data:image/jpeg;base64,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" width="500px" height="300px" alt="Java Code Image">
+    </div>
+  </div>
+
+
+
+  <div class="java-block reverse">
+    <div class="java-text">
+     <h2>What You Will Learn</h2>
+<p>
+  This course will give you a strong foundation in Go — a fast, modern, and efficient language
+  designed for scalable backend systems. Throughout the course, you will learn:
+  <br><br>
+
+  <strong>Go syntax & core concepts</strong> — variables, types, operators, conditions, and loops.<br>
+
+  <strong>Functions and modular code</strong> — writing clean, reusable components like professional Go developers.<br>
+
+  <strong>Working with packages & the standard library</strong> — using Go’s powerful built-in tools for everyday tasks.<br>
+
+  <strong>Concurrency with goroutines & channels</strong> — learn one of Go’s most powerful features for building scalable systems.<br>
+
+  <strong>Backend fundamentals</strong> — build your first APIs, understand servers, handlers, routing, and JSON processing.<br>
+
+  <strong>Error handling & debugging</strong> — master Go’s unique error-returning approach and write robust, reliable code.
+</p>
+
+<p>
+  By the end of this course, you'll be able to build real Go applications,
+  understand how modern backend systems work, and create your first production-ready
+  services — from simple tools to lightweight servers.
+</p>
+
+    </div>
+
+    <div class="java-img">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREyT-XTtg4Maf4fcrsNHVTnSijRgtMDmn2RQ&s" alt="Java Learning">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<section id="about-go" class="about-java container">
+  <h2 class="section-title">About Go</h2>
+
+  <div class="about-grid">
+
+
+    <article class="about-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Go logo" class="about-icon">
+      <h3>Short History</h3>
+      <p>
+        Go (Golang) was created at Google in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson.
+        It was designed to combine simplicity with high performance, making it ideal for modern backend systems.
+      </p>
+    </article>
+
+
+    <article class="about-card">
+      <img src="https://img.icons8.com/3d-fluency/96/rocket.png" alt="Why choose Go" class="about-icon">
+      <h3>Why Choose Go</h3>
+      <ul class="why-list">
+        <li>Fast, efficient, and highly scalable</li>
+        <li>Built-in concurrency with goroutines & channels</li>
+        <li>Perfect for backend, cloud, and distributed systems</li>
+      </ul>
+    </article>
+
+
+    <article class="about-card">
+      <img src="https://img.icons8.com/3d-fluency/96/mind-map.png" alt="Learn Go" class="about-icon">
+      <h3>What You'll Learn</h3>
+      <ul class="learn-list">
+        <li>Go basics & core concepts</li>
+        <li>Variables, loops, functions</li>
+        <li>Packages, concurrency & goroutines</li>
+        <li>Your first backend and API project</li>
+      </ul>
+     
+    </article>
+
+  </div>
+</section>
+
+
+
+</section>
+
+<h2 class="salary-title">Go Developer Salaries</h2>
+
+<div class="salary-cards">
+
+  <div class="salary-card salary-card1">
+    <h3>₸250,000</h3>
+    <span class="level-badge">Junior</span>
+    <p>After completing the course</p>
+  </div>
+
+  <div class="salary-card salary-card2">
+    <h3>₸500,000</h3>
+    <span class="level-badge">Middle</span>
+    <p>1–5 years</p>
+  </div>
+
+  <div class="salary-card salary-card3">
+    <h3>₸1,300,000</h3>
+    <img src="https://cdn-icons-png.flaticon.com/512/1161/1161782.png" class="salary-img" alt="senior icon">
+    <span class="level-badge">Senior</span>
+    <p>5+ years</p>
+  </div>
+
+</div>
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <h4>CodeLab</h4>
+      <p>Your trusted platform for modern online learning.  
+         Start your journey today.</p>
+    </div>
+
+    
+
+    <div class="footer-col">
+      <h5>Courses</h5>
+      <ul>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">Go</a></li>
+        <li><a href="#">AI & ML</a></li>
+        <li><a href="#">Design</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Learning Paths</a></li>
+        <li><a href="#">Instructors</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contacts">
+        <h5>Email: <a href="mailto:hello@codelab.com">hello@codelab.com</a></h5>
+        <h5>Phone: +7 705 123 45 67</h5>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 CodeLab. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
