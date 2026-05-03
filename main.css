@@ -851,3 +851,163 @@
   .section-title { font-size: 32px; }
 }
 
+.courses-layout {
+  display: flex;
+  gap: 40px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 2;
+}
+
+.course-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+}
+
+.course-card button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #6a5acd, #836fff);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.path-box {
+  flex: 1;
+  background: #f4f5ff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.apply-btn {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+/* SECTION */
+.premium {
+  padding: 100px 40px;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* GLOW BACKGROUND */
+.premium::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #7c3aed;
+  filter: blur(200px);
+  opacity: 0.3;
+  top: -100px;
+  left: -100px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: white; /* ВОТ ЭТО ГЛАВНОЕ */
+}
+.section-subtitle {
+  color: #9ca3af;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.premium-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.premium-card {
+  border-radius: 24px;
+  padding: 30px;
+  transition: 0.4s;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255,255,255,0.05);
+}
+
+/* BIG CARD */
+.big {
+  grid-column: span 2;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  background: rgba(124,58,237,0.2);
+  color: #c4b5fd;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.premium-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.premium-card p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* HOVER */
+.premium-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(124,58,237,0.6);
+}
+
+/* ANIMATION */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay {
+  transition-delay: 0.2s;
+}
+
+.delay2 {
+  transition-delay: 0.4s;
+}

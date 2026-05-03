@@ -62,4 +62,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+let total = 0;
+
+async function loadCourses() {
+  const res = await fetch("http://localhost:8080/skills");
+  const data = await res.json();
+
+  const container = document.getElementById("courses-container");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  data.forEach(skill => {
+    const price = 10000;
+
+    const card = document.createElement("div");
+    card.className = "course-card";
+    card.innerHTML = `
+      <h3>${skill.name}</h3>
+      <p>Build your skills step by step</p>
+      <p><b>${price} KZT</b></p>
+      <button onclick="addToPath('${skill.name}', ${price})">Add to Path</button>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function addToPath(name, price) {
+  const list = document.getElementById("path-list");
+  if (!list) return;
+
+  const li = document.createElement("li");
+  li.textContent = name;
+  list.appendChild(li);
+
+  total += price;
+  document.getElementById("total-price").innerText = "Total: " + total + " KZT";
+}
+
+window.addEventListener("DOMContentLoaded", loadCourses);
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".animate").forEach(el => {
+    el.classList.add("show");
+  });
+});
 
